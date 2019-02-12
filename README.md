@@ -2,7 +2,7 @@
 A [Bookshelf.js](http://bookshelfjs.org) plugin that makes 
 formatting, parsing and finding models easier.
 
-See also: [bookshelf-update](https://github.com/7kasper/bookshelf-update), 
+See also: [bookshelf-update](https://www.npmjs.com/package/bookshelf-update), 
 a plugin that makes updating models more intuitive.
 
 ## Installation

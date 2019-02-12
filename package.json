@@ -1,6 +1,6 @@
 {
   "name": "bookshelf-spotparse",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A bookshelf plugin that makes formatting, parsing and finding models easier.",
   "main": "index.js",
   "scripts": {
