@@ -2,6 +2,9 @@
 A [Bookshelf.js](http://bookshelfjs.org) plugin that makes 
 formatting, parsing and finding models easier.
 
+See also: [bookshelf-update](https://github.com/7kasper/bookshelf-update), 
+a plugin that makes updating models more intuitive.
+
 ## Installation
 * Install with npm using `npm i bookshelf-spotparse`
 * After creating a bookshelf instance, call the plugin method:
@@ -48,6 +51,7 @@ User.spot({username: 'PietHein', password: 'decryptedpassword'})
 In this case the password will be formatted (encrypted) before being passed
 to the database query.
 
+## Overriding
 _WARNING: SpotParse makes the format and parse functions static to be used with `spot()`._  
 Overriding the `format` and `parse` functions inside your model will
 result in `spot({key: value})` no longer parsing the value properly.  
@@ -84,4 +88,4 @@ let User = bookshelf.model('users', {
 });
 ```
 Leaving out `this.formatArrangement()` will nullify the workings of the 
-`arrangement` property, the `spot()` method will use the overridden code.
+`arrangement` property, the `spot()` method will still use the overridden code.
