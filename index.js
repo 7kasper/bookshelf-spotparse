@@ -12,10 +12,10 @@ module.exports = (bookshelf) => {
   }, {
     arrangement: {},
     format: function(attr) {
-      return formatArrangement(attr);
+      return this.formatArrangement(attr);
     },
     parse: function(attr) {
-      return parseArrangement(attr);
+      return this.parseArrangement(attr);
     },
     formatArrangement: function(attr) {
       for (let key in attr) {
